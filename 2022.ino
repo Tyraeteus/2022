@@ -304,7 +304,7 @@ void loop() {
       }
       //If we haven't turned far enough, turn
       if(getGyroAngle() != angleSetpoint) {
-        drive(turn90Speed(), turn90Speed()/abs(turn90Speed());
+        drive(turn90Speed(), turn90Speed()/abs(turn90Speed()));
       //Otherwise, update heading and advance to next state
       } else {
         if(heading == NORTH) {
@@ -670,7 +670,7 @@ void driveDistance(double distance, double speed) {
  * speed: double (0,1]; 1 being full speed and 0 being stopped
  */
 void turnDegrees(double degrees, double speed) {
-  drive(speed * turnAngleSpeed(degrees), turnAngleSpeed(degrees)/abs(turnAngleSpeed(degrees));
+  drive(speed * turnAngleSpeed(degrees), turnAngleSpeed(degrees)/abs(turnAngleSpeed(degrees)));
 }
 
 /*
